@@ -38,7 +38,7 @@ export async function updateDepPusatInfoHandler(req, res) {
 export async function deleteDepPusatInfoHandler(req, res) {
   try {
     const deppId = req.params.id;
-    await DepPusatModel.deleteDepPusatInfo(deppId);
+    await deleteDepPusatInfo(deppId);
     res.json({ message: "Departemen Pusat Info berhasil dihapus" });
   } catch (error) {
     res.status(500).json({ error: error.message });
