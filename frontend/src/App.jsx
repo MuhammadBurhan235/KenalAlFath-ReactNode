@@ -10,6 +10,7 @@ import InputIdenLeng from "./components/InputIdenLeng";
 
 import DashboardCatalog from "./components/DashboardCatalog";
 import HomePage from "./pages/Home/HomePage";
+import Test from "./pages/Home/Test";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/tventmainpage" element={<TventMP />} />
         <Route path="/detailidentitypage" element={<InputIdenLeng />} />
         <Route path="/" element={<HomePage />} />
+        <Route path="/test" element={<Test />} />
       </Routes>
     </BrowserRouter>
   );
