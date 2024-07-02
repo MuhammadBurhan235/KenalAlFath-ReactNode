@@ -1,0 +1,78 @@
+.banner .content {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(1400px, 100vw);
+  height: max-content;
+  padding-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.banner .content h1 {
+  font-family: "ICA Rubrik";
+  font-size: 7em;
+  line-height: 0.5em;
+  color: #25283b;
+  position: relative;
+}
+
+.banner .content h1::after {
+  inset: 0;
+  font-size: 0.5em;
+  content: attr(data-content);
+  color: #25283b;
+  -webkit-text-stroke: 2px #d2d2d2;
+}
+
+.banner .content .author {
+  font-family: Poppins;
+  text-align: right;
+  max-width: 200px;
+}
+
+.banner .content h2 {
+  font-size: 3em;
+}
+
+.banner .content .model {
+  width: 100%;
+  height: 75vh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-size: auto 130%;
+  background-repeat: no-repeat;
+  background-position: top center;
+  z-index: 1;
+}
+
+@media screen and (max-width: 1024px) {
+  .banner .content h1 {
+    text-align: center;
+    width: 100%;
+    text-shadow: 0 10px 20px #000;
+    font-size: 7em;
+  }
+
+  .banner .content .author {
+    color: #fff;
+    padding: 20px;
+    text-shadow: 0 10px 20px #000;
+    z-index: 2;
+    max-width: unset;
+    width: 100%;
+    text-align: center;
+    padding: 0 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner .content h1 {
+    font-size: 3em;
+  }
+}

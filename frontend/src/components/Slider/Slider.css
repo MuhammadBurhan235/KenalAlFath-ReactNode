@@ -1,0 +1,203 @@
+.banner .slider {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  top: 17%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1100px);
+  animation: autoRun 75s linear infinite;
+  z-index: 2;
+  align-self: center;
+}
+
+@keyframes autoRun {
+  from {
+    transform: perspective(1100px) rotateX(-3deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1100px) rotateX(-3deg) rotateY(360deg);
+  }
+}
+
+.banner .slider .item {
+  position: absolute;
+  inset: 0;
+  transform: rotateY(
+      calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+    )
+    translateZ(50vw);
+  align-items: center;
+  justify-content: center;
+}
+
+.banner .slider .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.banner .slider .item .card {
+  width: 100%;
+  padding: 10px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.179);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  cursor: pointer;
+}
+
+.banner .slider .item .card:hover {
+  background-color: rgba(255, 255, 255, 0.462);
+}
+
+@media screen and (max-width: 1024px) {
+  .banner .slider {
+    width: 160px;
+    height: 200px;
+    left: calc(50% - 80px);
+  }
+
+  .banner .slider .item .card {
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.179);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner .slider {
+    width: 100px;
+    height: 150px;
+    left: calc(50% - 50px);
+    top: 17%;
+  }
+
+  @keyframes autoRun {
+    from {
+      transform: perspective(300px) rotateX(-3deg) rotateY(0deg);
+    }
+    to {
+      transform: perspective(300px) rotateX(-3deg) rotateY(360deg);
+    }
+  }
+
+  .banner .slider .item .card {
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.179);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+  }
+}
+
+.banner .slider .item .card {
+  width: 100%;
+  padding: 10px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.179);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  cursor: pointer;
+}
+
+.banner .slider .item .card:hover {
+  background-color: rgba(255, 255, 255, 0.462);
+}
+
+.card-body {
+  text-align: justify;
+  padding: 20px; /* Padding dalam card */
+}
+
+/* Contoh CSS untuk card title */
+.card-title {
+  font-size: 1.2rem; /* Ukuran font judul card */
+  font-weight: bold; /* Ketebalan font judul card */
+  margin-bottom: 10px; /* Jarak bawah dari judul ke konten */
+}
+
+/* Contoh CSS untuk card text */
+.card-text {
+  font-size: 1rem; /* Ukuran font teks card */
+  line-height: 1.6; /* Tinggi baris teks */
+}
+
+/* Contoh CSS untuk card link */
+.card-link {
+  text-decoration: none; /* Menghapus garis bawah pada link */
+  color: #007bff; /* Warna teks link */
+}
+
+/* Contoh CSS untuk card footer */
+.card-footer {
+  background-color: #f7f7f7; /* Warna latar belakang footer card */
+  padding: 10px; /* Padding dalam footer card */
+  text-align: center; /* Posisi teks tengah dalam footer card */
+}
+
+@media screen and (max-width: 1024px) {
+  .banner .slider .item .card {
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.179);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+  }
+
+  .card.blink {
+    animation: blink 1.5s infinite;
+  }
+
+  @keyframes blink {
+    0% {
+      background-color: rgba(255, 255, 255, 0.462);
+    }
+    50% {
+      background-color: rgba(255, 255, 255, 0.179);
+    }
+    100% {
+      background-color: rgba(255, 255, 255, 0.462);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .banner .slider .item .card {
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.179);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+  }
+}
