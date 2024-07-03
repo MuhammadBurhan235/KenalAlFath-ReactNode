@@ -11,6 +11,7 @@ import InputIdenLeng from "./components/InputIdenLeng";
 import DashboardCatalog from "./components/DashboardCatalog";
 import HomePage from "./pages/Home/HomePage";
 import Test from "./pages/Home/Test";
+import IntPicPage from "./pages/IntPic/IntPicPage";
 
 function App() {
   return (
@@ -25,8 +26,9 @@ function App() {
         <Route path="/signinupalfath" element={<SignInUpAlFath />} />
         <Route path="/tventmainpage" element={<TventMP />} />
         <Route path="/detailidentitypage" element={<InputIdenLeng />} />
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<IntPicPage />} />
         <Route path="/test" element={<Test />} />
+        <Route path="/home" element={<HomePage />} />
       </Routes>
     </BrowserRouter>
   );
