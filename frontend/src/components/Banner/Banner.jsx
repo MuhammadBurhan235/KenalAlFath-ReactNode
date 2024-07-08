@@ -1,12 +1,11 @@
 import React from "react";
 import Slider from "../Slider/Slider";
-import Content from "../Content/Content";
-import "./Banner.css"; // Sesuaikan dengan nama file CSS Anda
+import style from "./Banner.module.css";
 
-const Banner = () => {
+const Banner = ({ banners, handlePause }) => {
   return (
-    <div className="banner">
-      <Slider />
+    <div className={style.banner}>
+      <Slider sliders={banners} />
     </div>
   );
 };

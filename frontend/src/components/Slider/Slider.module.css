@@ -1,0 +1,217 @@
+.slider {
+  position: absolute;
+  width: 200px;
+  height: 250px;
+  top: 15%;
+  left: calc(50% - 100px);
+  transform-style: preserve-3d;
+  transform: perspective(1700px);
+  animation: autoRun 180s linear infinite;
+  z-index: 2;
+  align-self: center;
+}
+
+@keyframes autoRun {
+  from {
+    transform: perspective(1700px) rotateX(-3deg) rotateY(0deg);
+  }
+  to {
+    transform: perspective(1700px) rotateX(-3deg) rotateY(360deg);
+  }
+}
+
+.item {
+  position: absolute;
+  inset: 0;
+  transform: rotateY(
+      calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+    )
+    translateZ(800px);
+  align-items: center;
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card {
+  width: 100%;
+  padding: 10px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.179);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.462);
+}
+
+.pause {
+  width: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3; /* Pastikan navigasi di atas konten lain */
+  background-color: rgba(255, 255, 255, 0.179);
+  padding: 10px;
+  border-radius: 5px;
+  bottom: -475px;
+  position: relative;
+}
+
+button {
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 1024px) {
+  .slider {
+    width: 160px;
+    height: 200px;
+    left: calc(50% - 80px);
+    top: 13%;
+    transform: perspective(1300px);
+  }
+
+  @keyframes autoRun {
+    from {
+      transform: perspective(1300px) rotateX(-3deg) rotateY(0deg);
+    }
+    to {
+      transform: perspective(1300px) rotateX(-3deg) rotateY(360deg);
+    }
+  }
+
+  .item {
+    position: absolute;
+    inset: 0;
+    transform: rotateY(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(700px);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.179);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 100%;
+    animation: blink 1.5s infinite;
+  }
+
+  @keyframes blink {
+    0% {
+      background-color: rgba(255, 255, 255, 0.462);
+    }
+    50% {
+      background-color: rgba(255, 255, 255, 0.179);
+    }
+    100% {
+      background-color: rgba(255, 255, 255, 0.462);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slider {
+    width: 100px;
+    height: 150px;
+    left: calc(50% - 50px);
+    top: 25%;
+    transform: perspective(270px);
+  }
+
+  @keyframes autoRun {
+    from {
+      transform: perspective(270px) rotateX(-3deg) rotateY(0deg);
+    }
+    to {
+      transform: perspective(270px) rotateX(-3deg) rotateY(360deg);
+    }
+  }
+
+  .item {
+    position: absolute;
+    inset: 0;
+    transform: rotateY(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(210px);
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.179);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 83%;
+    left: 0%;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .slider {
+    width: 100px;
+    height: 150px;
+    left: calc(50% - 50px);
+    top: 25%;
+    transform: perspective(281px);
+  }
+
+  @keyframes autoRun {
+    from {
+      transform: perspective(281px) rotateX(-3deg) rotateY(0deg);
+    }
+    to {
+      transform: perspective(281px) rotateX(-3deg) rotateY(360deg);
+    }
+  }
+
+  .item {
+    position: absolute;
+    inset: 0;
+    transform: rotateY(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(210px);
+    align-items: center;
+    justify-content: center;
+  }
+}

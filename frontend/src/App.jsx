@@ -9,9 +9,9 @@ import TventMP from "./components/TventMP";
 import InputIdenLeng from "./components/InputIdenLeng";
 
 import DashboardCatalog from "./components/DashboardCatalog";
-import HomePage from "./pages/Home/HomePage";
-import Test from "./pages/Home/Test";
+import HomePage from "./pages/Home/HomePage_copy";
 import IntPicPage from "./pages/IntPic/IntPicPage";
+import FullscreenDetector from "./pages/Home/FullscreenDetector";
 
 function App() {
   return (
@@ -27,8 +27,8 @@ function App() {
         <Route path="/tventmainpage" element={<TventMP />} />
         <Route path="/detailidentitypage" element={<InputIdenLeng />} />
         <Route path="/" element={<IntPicPage />} />
-        <Route path="/test" element={<Test />} />
         <Route path="/home" element={<HomePage />} />
+        <Route path="/detector" element={<FullscreenDetector />} />
       </Routes>
     </BrowserRouter>
   );
