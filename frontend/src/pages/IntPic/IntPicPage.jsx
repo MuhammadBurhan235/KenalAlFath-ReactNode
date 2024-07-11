@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./IntPicPage.module.css";
+import style from "./IntPicPage.module.css";
 import Popup from "./Popup";
 import Slideshow from "./Slideshow";
 import useFullscreen from "../../utils/FullscreenUtils"; // Import the fullscreen module
@@ -26,10 +26,10 @@ const HomePage = () => {
   };
 
   return (
-    <div className="app">
-      <div className={`full-image ${popup ? "blur" : ""}`}></div>
+    <div>
+      <div className={`${style.fullImage} ${popup ? "blur" : ""}`}></div>
       <div
-        className="small-image-container"
+        className={style.smallImageContainer}
         style={{
           bottom: isFullscreen ? "17.5vw" : "13vw",
           left: isFullscreen ? "75.5vw" : "75vw",
@@ -38,20 +38,20 @@ const HomePage = () => {
         <img
           src={toa}
           alt="Small Image 1"
-          className="small-image"
+          className={`${style.smallImage} ${style.blink}`}
           data-popup="mobil"
           style={{ width: "6vw", height: "9vw" }}
           onClick={() => handleImageClick("mobil")}
         />
       </div>
       <div
-        className="small-image-container"
+        className={style.smallImageContainer}
         style={{ top: "0vw", left: "0vw" }}
       >
         {/* <img
           src={isFullscreen ? restoran1 : restoran}
           alt="Small Image 3"
-          className="small-image"
+          className={style.smallImage}
           data-popup="restoran"
           style={{ width: "86vw", height: "auto" }}
           onClick={() => handleImageClick("restoran")}
@@ -96,7 +96,7 @@ const HomePage = () => {
         <button
           onClick={toggleFullscreen}
           style={{
-            width: "8vw",
+            width: "9vw",
             height: "3vw",
             position: "absolute",
             top: "1vw",

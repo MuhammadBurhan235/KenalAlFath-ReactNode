@@ -16,3 +16,6 @@ body {
       #25283b22 100px 101px
     );
 }
+.blur {
+  filter: blur(5px);
+}

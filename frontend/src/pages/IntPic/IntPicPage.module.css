@@ -17,7 +17,7 @@ body {
     );
 }
 
-body::before {
+/* body::before {
   position: absolute;
   width: min(1400px, 90vw);
   top: 10%;
@@ -29,15 +29,8 @@ body::before {
   background-repeat: no-repeat;
   background-position: top center;
   pointer-events: none;
-}
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  overflow: hidden;
-}
-.full-image {
+} */
+.fullImage {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -46,10 +39,10 @@ body {
   background-position: center;
   transition: filter 0.3s;
 }
-.small-image-container {
+.smallImageContainer {
   position: absolute;
 }
-.small-image {
+.smallImage {
   cursor: pointer;
   transition: filter 0.3s ease-in-out;
 }
@@ -67,10 +60,10 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
-.small-image-container:hover .tooltip {
+.tooltip {
   visibility: visible;
 }
-.small-image:hover {
+.smallImage:hover {
   filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
 }
 .popup {
@@ -86,7 +79,7 @@ body {
   align-items: center;
 }
 
-.popup-content {
+.popupContent {
   background-color: #fff;
   padding: 20px;
   border-radius: 10px;
@@ -94,11 +87,11 @@ body {
   position: relative;
 }
 
-.popup-content p {
+p {
   margin: 0;
 }
 
-.popup-close {
+.popupClose {
   margin-top: 10px;
   cursor: pointer;
   color: #ffffff;
@@ -109,7 +102,7 @@ body {
   filter: blur(5px);
 }
 
-.slideshow-container {
+.slideshowContainer {
   position: relative;
   width: 100%;
   max-width: 500px;
@@ -147,7 +140,7 @@ body {
   color: white;
 }
 
-.card-container {
+.cardContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -165,9 +158,27 @@ body {
   text-align: center;
 }
 
-.banner-container {
+.bannerContainer {
   display: flex;
   justify-content: space-between; /* Untuk memberi jarak antara dua banner */
+}
+
+/* BlinkEffect.module.css */
+
+.blink {
+  animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+  0% {
+    filter: drop-shadow(0 0 7px rgb(255, 255, 255));
+  }
+  50% {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.377));
+  }
+  100% {
+    filter: drop-shadow(0 0 5px rgb(255, 255, 255));
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -188,7 +199,7 @@ body {
   } */
 }
 @media (max-width: 480px) {
-  .small-image {
+  .smallImage {
     width: 10vw;
     height: auto;
   }
