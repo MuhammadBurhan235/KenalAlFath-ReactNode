@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/KenalAlFath-ReactNode/static/css/main.3f4a14da.css",
+    "main.js": "/KenalAlFath-ReactNode/static/js/main.e598e34f.js",
+    "static/media/slide3.webp": "/KenalAlFath-ReactNode/static/media/slide3.94ee929db79891d539ba.webp",
+    "static/media/medkominfo.png": "/KenalAlFath-ReactNode/static/media/medkominfo.31fb30e450cd239c2b21.png",
+    "static/media/kemuslimahan.png": "/KenalAlFath-ReactNode/static/media/kemuslimahan.12e6b9c1b500369f6fae.png",
+    "static/media/kdrp.png": "/KenalAlFath-ReactNode/static/media/kdrp.0b9018161bc39d83a0f1.png",
+    "static/media/korwat.png": "/KenalAlFath-ReactNode/static/media/korwat.e87af15d1e5654d731d4.png",
+    "static/media/syiar.png": "/KenalAlFath-ReactNode/static/media/syiar.ecf7230d7829eec061e0.png",
+    "static/media/sekjen.png": "/KenalAlFath-ReactNode/static/media/sekjen.b0779142cf817953f508.png",
+    "static/media/psdm.png": "/KenalAlFath-ReactNode/static/media/psdm.53c19b15084339f971ed.png",
+    "static/media/eksternal.png": "/KenalAlFath-ReactNode/static/media/eksternal.1ab876aa63aeda280596.png",
+    "static/media/bendahara_umum.png": "/KenalAlFath-ReactNode/static/media/bendahara_umum.4d00a07ed17b8d701cce.png",
+    "static/media/busdev.png": "/KenalAlFath-ReactNode/static/media/busdev.69e166efa2efea02fcd8.png",
+    "static/media/mas_ul.png": "/KenalAlFath-ReactNode/static/media/mas_ul.8bce41e7bcd5d4e29679.png",
+    "static/media/mo.png": "/KenalAlFath-ReactNode/static/media/mo.557b154bcaeb1587c603.png",
+    "static/media/sekretaris_umum.png": "/KenalAlFath-ReactNode/static/media/sekretaris_umum.3252dcf1a7e87d69b913.png",
+    "static/media/slide2.webp": "/KenalAlFath-ReactNode/static/media/slide2.facc1299063c84e518bd.webp",
+    "static/media/rinai.png": "/KenalAlFath-ReactNode/static/media/rinai.0178b4cea46999d8fa52.png",
+    "static/media/restoran1.png": "/KenalAlFath-ReactNode/static/media/restoran1.2f0133866001ea3aea68.png",
+    "static/media/restoran.png": "/KenalAlFath-ReactNode/static/media/restoran.8e4f7f04ac004454dcea.png",
+    "static/media/sekrelandscape.jpg": "/KenalAlFath-ReactNode/static/media/sekrelandscape.dab82702c779c5614823.jpg",
+    "static/media/slide1.png": "/KenalAlFath-ReactNode/static/media/slide1.94456e144d17661aa1d6.png",
+    "static/media/orion.png": "/KenalAlFath-ReactNode/static/media/orion.b60708629cfb3e8f9ec0.png",
+    "static/media/mobil1.png": "/KenalAlFath-ReactNode/static/media/mobil1.47b452d3aa21955afc03.png",
+    "static/media/toa.png": "/KenalAlFath-ReactNode/static/media/toa.868ec2f6764527b063c0.png",
+    "static/media/woman.png": "/KenalAlFath-ReactNode/static/media/woman.9322f8fb9634463de29f.png",
+    "static/media/man.png": "/KenalAlFath-ReactNode/static/media/man.f2a59cc4ad31fe6c0079.png",
+    "static/media/slick.svg": "/KenalAlFath-ReactNode/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/KenalAlFath-ReactNode/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/KenalAlFath-ReactNode/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/KenalAlFath-ReactNode/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/KenalAlFath-ReactNode/index.html",
+    "main.3f4a14da.css.map": "/KenalAlFath-ReactNode/static/css/main.3f4a14da.css.map",
+    "main.e598e34f.js.map": "/KenalAlFath-ReactNode/static/js/main.e598e34f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f4a14da.css",
+    "static/js/main.e598e34f.js"
+  ]
+}
